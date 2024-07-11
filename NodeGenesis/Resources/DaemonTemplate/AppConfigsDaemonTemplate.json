@@ -1,0 +1,29 @@
+{
+  "env": {
+    "INDY_NETWORK": "__Name__",
+    "ES_URL": "http://indyscan-elasticsearch.esnet:9200",
+    "ES_INDEX": "__ElasticSearchIndex__"
+  },
+  "workersBuildersTemplate": [
+    {
+      "builder": "rtwSerialization",
+      "params": {
+        "indyNetworkId": "{{{INDY_NETWORK}}}",
+        "genesisPath": "{{{cfgdir}}}/genesis/{{{INDY_NETWORK}}}.txn",
+        "esIndex": "{{{ES_INDEX}}}",
+        "esUrl": "{{{ES_URL}}}",
+        "workerTiming": "__SeralizationSpeedSlowMediumFast__"
+      }
+    },
+    {
+      "builder": "rtwExpansion",
+      "params": {
+        "indyNetworkId": "{{{INDY_NETWORK}}}",
+        "esUrl": "{{{ES_URL}}}",
+        "esIndex": "{{{ES_INDEX}}}",
+        "workerTiming": "__ExpansionSpeedSlowMediumFast__"
+      }
+    }
+  ]
+}
+

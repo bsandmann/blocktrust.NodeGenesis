@@ -1,0 +1,51 @@
+{
+  "IndyscanBasePath": "~/indyscan",
+  "IndyscanDaemonImage": "ghcr.io/patrik-stas/indyscan/indyscan-daemon:4.6.1",
+  "IndyscanApiImage": "ghcr.io/patrik-stas/indyscan/indyscan-api:4.6.1",
+  "IndyscanWebappImage": "ghcr.io/patrik-stas/indyscan/indyscan-webapp:4.6.1",
+  "IndyscanDaemonUiImage": "ghcr.io/patrik-stas/indyscan/indyscan-daemon-ui:4.6.1",
+  "ElasticSearchImage": "docker.elastic.co/elasticsearch/elasticsearch:7.17.10",
+  "Networks": [
+    {
+      "NameAndFixedId": "SOVRIN_MAINNET",
+      "AliasIds": [
+        "sovmain",
+        "SOVRIN_MAINNET"
+      ],
+      "DisplayNameShort": "SovMain",
+      "DisplayNameLong": "Sovrin Mainnet",
+      "DisplayDescription": "Sovrin network for production use cases",
+      "ElasticSearchIndex": "txs_sovmain",
+      "Add": true,
+      "SeralizationSpeedSlowMediumFast": "SLOW",
+      "ExpansionSpeedSlowMediumFast":"MEDIUM" 
+    },
+    {
+      "NameAndFixedId": "SOVRIN_STAGINGNET",
+      "AliasIds": [
+        "sovstaging",
+        "SOVRIN_TESTNET"
+      ],
+      "DisplayNameShort": "SovTest",
+      "DisplayNameLong": "Sovrin Stagingnet/Testnet/Sandbox",
+      "DisplayDescription": "There was a rename and its still unclear, if this is called Staging, Testnet or Sandbox",
+      "ElasticSearchIndex": "txs_sovstaging",
+      "Add": false,
+      "SeralizationSpeedSlowMediumFast": "MEDIUM",
+      "ExpansionSpeedSlowMediumFast":"FAST"
+    },
+    {
+      "NameAndFixedId": "SOVRIN_BUILDERNET",
+      "AliasIds": [
+        "sovbuilder"
+      ],
+      "DisplayNameShort": "SovBuilder",
+      "DisplayNameLong": "Sovrin BuilderNet",
+      "DisplayDescription": "For active development of your solution.",
+      "ElasticSearchIndex": "txs_sovbuilder",
+      "Add": false,
+      "SeralizationSpeedSlowMediumFast": "FAST",
+      "ExpansionSpeedSlowMediumFast":"SLOW"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "__NAME__",
+  "aliases": [],
+  "ui": {
+    "priority": 66666,
+    "display": "__DisplayNameShort__",
+    "display-long": "__DisplayNameLong__",
+    "description": "__DisplayDescription__",
+    "logo-address": "/static/sovrin.png"
+  },
+  "es" : {
+    "index": "__ElasticSearchIndex__"
+  }
+}

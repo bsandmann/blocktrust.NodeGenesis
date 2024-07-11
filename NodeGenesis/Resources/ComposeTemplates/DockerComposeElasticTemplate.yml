@@ -1,0 +1,56 @@
+version: '3.7'
+
+x-es-logging:
+  &es-logging
+  options:
+    max-size: '300m'
+    max-file: '2'
+  driver: json-file
+
+x-standard-logging:
+  &service-logging
+  options:
+    max-size: '500m'
+    max-file: '3'
+  driver: json-file
+
+x-ui-logging:
+  &ui-logging
+  options:
+    max-size: '100m'
+    max-file: '3'
+  driver: json-file
+
+services:
+  indyscan-elasticsearch:
+    image: ${INDYSCAN_ELASTICSEARCH_IMAGE:-__ElasticSearchImage__}
+    container_name: indyscan-elasticsearch
+    logging: *es-logging
+    networks:
+      - esnet
+    environment:
+      - xpack.security.enabled=false
+      - discovery.type=single-node
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    cap_add:
+      - IPC_LOCK
+    volumes:
+      - indyscan-es:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+      - 9300:9300
+
+networks:
+  esnet:
+    name: esnet
+    driver: bridge
+
+volumes:
+  indyscan-es:
+    driver: local
