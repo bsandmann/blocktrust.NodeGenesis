@@ -17,7 +17,7 @@
       "DisplayDescription": "Sovrin network for production use cases",
       "ElasticSearchIndex": "txs_sovmain",
       "Add": true,
-      "SeralizationSpeedSlowMediumFast": "SLOW",
+      "SeralizationSpeedSlowMediumFast": "MEDIUM",
       "ExpansionSpeedSlowMediumFast":"MEDIUM" 
     },
     {
@@ -32,7 +32,7 @@
       "ElasticSearchIndex": "txs_sovstaging",
       "Add": false,
       "SeralizationSpeedSlowMediumFast": "MEDIUM",
-      "ExpansionSpeedSlowMediumFast":"FAST"
+      "ExpansionSpeedSlowMediumFast":"MEDIUM"
     },
     {
       "NameAndFixedId": "SOVRIN_BUILDERNET",
@@ -44,8 +44,8 @@
       "DisplayDescription": "For active development of your solution.",
       "ElasticSearchIndex": "txs_sovbuilder",
       "Add": false,
-      "SeralizationSpeedSlowMediumFast": "FAST",
-      "ExpansionSpeedSlowMediumFast":"SLOW"
+      "SeralizationSpeedSlowMediumFast": "MEDIUM",
+      "ExpansionSpeedSlowMediumFast":"MEDIUM"
     }
   ]
 }

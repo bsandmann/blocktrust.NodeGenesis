@@ -29,7 +29,6 @@ services:
     logging: *service-logging
     depends_on:
       - indyscan-elasticsearch
-      - indyscan-indypool
     networks:
       - esnet
       - indyscan
