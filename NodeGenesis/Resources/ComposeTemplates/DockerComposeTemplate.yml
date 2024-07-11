@@ -42,7 +42,7 @@ services:
       - AUTOSTART=true
       - ENABLE_LOGFILES=false
     volumes:
-      - ./app-configs-daemon/:__IndyscanBasePath__/indyscan-daemon/app-configs-docker
+      - ./app-configs-daemon/:__IndyscanBasePath__/indyscan-daemon/app-configs
 
   indyscan-api:
     restart: unless-stopped
