@@ -142,7 +142,7 @@ class Program
             outputContent = outputContent.Replace("__IndyscanDaemonUiImage__", config.IndyscanDaemonUiImage);
 
             var workerPaths = config.Networks.Where(p => p.Add)
-                                             .Select(network => Path.Combine(config.IndyscanBasePath, "indyscan-daemon", "app-configs", $"{network.NameAndFixedId}.json"));
+                                             .Select(network => Path.Combine(config.IndyscanBasePath, "start", "app-configs-daemon", $"{network.NameAndFixedId}.json"));
             var workerPathString = string.Join(",", workerPaths);
             outputContent = outputContent.Replace("__WorkerConfigs__", workerPathString);
 
@@ -160,7 +160,7 @@ class Program
     {
         string projectDirectory = GetProjectDirectory();
         string templatePath = Path.Combine(projectDirectory, "Resources", "ApiTemplate", "ApiItemTemplate.json");
-        string outputPath = Path.Combine(config.IndyscanBasePath, "indyscan-api", "app-config-docker", "allNetworks.json");
+        string outputPath = Path.Combine(config.IndyscanBasePath, "start", "app-config-api", "allNetworks.json");
 
         if (!File.Exists(templatePath))
         {
@@ -204,7 +204,7 @@ class Program
     {
         string projectDirectory = GetProjectDirectory();
         string templatePath = Path.Combine(projectDirectory, "Resources", "DaemonTemplate", "AppConfigsDaemonTemplate.json");
-        string outputDirectory = Path.Combine(config.IndyscanBasePath, "indyscan-daemon", "app-configs");
+        string outputDirectory = Path.Combine(config.IndyscanBasePath, "start", "app-configs-daemon");
 
         if (!File.Exists(templatePath))
         {
@@ -259,7 +259,7 @@ class Program
     {
         string projectDirectory = GetProjectDirectory();
         string sourceGenesisDir = Path.Combine(projectDirectory, "Resources", "Genesis");
-        string targetGenesisDir = Path.Combine(config.IndyscanBasePath, "indyscan-daemon", "app-configs", "Genesis");
+        string targetGenesisDir = Path.Combine(config.IndyscanBasePath, "start", "app-configs-daemon", "genesis");
 
         // Create the target Genesis directory if it doesn't exist
         Directory.CreateDirectory(targetGenesisDir);
