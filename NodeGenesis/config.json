@@ -12,7 +12,7 @@
         "sovmain",
         "SOVRIN_MAINNET"
       ],
-      "DisplayNameShort": "SovMain",
+      "DisplayNameShort": "SovM",
       "DisplayNameLong": "Sovrin Mainnet",
       "DisplayDescription": "Sovrin network for production use cases",
       "ElasticSearchIndex": "txs_sovmain",
@@ -26,7 +26,7 @@
         "sovstaging",
         "SOVRIN_TESTNET"
       ],
-      "DisplayNameShort": "SovTest",
+      "DisplayNameShort": "SovT",
       "DisplayNameLong": "Sovrin Stagingnet/Testnet/Sandbox",
       "DisplayDescription": "There was a rename and its still unclear, if this is called Staging, Testnet or Sandbox",
       "ElasticSearchIndex": "txs_sovstaging",
@@ -39,7 +39,7 @@
       "AliasIds": [
         "sovbuilder"
       ],
-      "DisplayNameShort": "SovBuilder",
+      "DisplayNameShort": "SovB",
       "DisplayNameLong": "Sovrin BuilderNet",
       "DisplayDescription": "For active development of your solution.",
       "ElasticSearchIndex": "txs_sovbuilder",
@@ -51,11 +51,11 @@
       "NameAndFixedId": "IDUNION_MAINNET",
       "AliasIds": [
       ],
-      "DisplayNameShort": "IDMain",
+      "DisplayNameShort": "IDM",
       "DisplayNameLong": "IDunion Mainnet",
       "DisplayDescription": "The IDunion network for production use cases",
       "ElasticSearchIndex": "txs_idunionmain",
-      "Add": true,
+      "Add": false,
       "SeralizationSpeedSlowMediumFast": "MEDIUM",
       "ExpansionSpeedSlowMediumFast":"MEDIUM"
     },
@@ -63,10 +63,34 @@
       "NameAndFixedId": "IDUNION_TESTNET",
       "AliasIds": [
       ],
-      "DisplayNameShort": "IDTest",
+      "DisplayNameShort": "IDT",
       "DisplayNameLong": "IDunion Testnet",
       "DisplayDescription": "The IDunion network for testing use cases",
       "ElasticSearchIndex": "txs_iduniontest",
+      "Add": false,
+      "SeralizationSpeedSlowMediumFast": "MEDIUM",
+      "ExpansionSpeedSlowMediumFast":"MEDIUM"
+    },
+    {
+      "NameAndFixedId": "INDICIO_MAINNET",
+      "AliasIds": [
+      ],
+      "DisplayNameShort": "InM",
+      "DisplayNameLong": "Indicio Mainnet",
+      "DisplayDescription": "The Indicio network for production use cases",
+      "ElasticSearchIndex": "txs_indiciomain",
+      "Add": true,
+      "SeralizationSpeedSlowMediumFast": "MEDIUM",
+      "ExpansionSpeedSlowMediumFast":"MEDIUM"
+    },
+    {
+      "NameAndFixedId": "INDICIO_DEMONET",
+      "AliasIds": [
+      ],
+      "DisplayNameShort": "InD",
+      "DisplayNameLong": "Indicio Demonet",
+      "DisplayDescription": "The Indicio network for testing use",
+      "ElasticSearchIndex": "txs_indiciodemo",
       "Add": true,
       "SeralizationSpeedSlowMediumFast": "MEDIUM",
       "ExpansionSpeedSlowMediumFast":"MEDIUM"

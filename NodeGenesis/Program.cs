@@ -14,6 +14,7 @@ class Program
     {
         try
         {
+            
             string projectDirectory = GetProjectDirectory();
             string configPath = Path.Combine(projectDirectory, "config.json");
 
@@ -31,6 +32,13 @@ class Program
                 Console.WriteLine("Failed to deserialize config.json");
                 return;
             }
+            
+            Console.WriteLine("This application will generate configuration files for the indyscan project, depending on the configuration in config.json");
+            Console.WriteLine($"All data will then be copied to {Config.IndyscanBasePath}/start and can be used to start the indyscan project");
+            Console.WriteLine($"No prior clone of indyscan or other dep are required. Feel free to delete the indyscan folder before running this script");
+            Console.WriteLine($"All containters should be stopped before running this script");
+            Console.WriteLine($"Continue by pressing a key or cancel");
+            Console.ReadKey();
 
             Console.WriteLine("Configuration loaded successfully.");
 
@@ -50,8 +58,10 @@ class Program
             CopyGenesisFiles(Config);
 
             
-            Console.WriteLine("If all operations were successful indysync should now be ablw to run:");
+            Console.WriteLine($"If all operations were successful indysync should now be ablw to run from the {Config.IndyscanBasePath}/start folder");
             Console.WriteLine("sudo docker compose -f docker-compose.es.yml -f docker-compose.yml up -d --build");
+            Console.WriteLine("Then start the browser and navigate to http://localhost:3707");
+            
         }
         catch (Exception ex)
         {
