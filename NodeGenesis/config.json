@@ -16,9 +16,9 @@
       "DisplayNameLong": "Sovrin Mainnet",
       "DisplayDescription": "Sovrin network for production use cases",
       "ElasticSearchIndex": "txs_sovmain",
-      "Add": true,
+      "Add": false,
       "SeralizationSpeedSlowMediumFast": "MEDIUM",
-      "ExpansionSpeedSlowMediumFast":"MEDIUM" 
+      "ExpansionSpeedSlowMediumFast":"MEDIUM"
     },
     {
       "NameAndFixedId": "SOVRIN_STAGINGNET",
@@ -30,7 +30,7 @@
       "DisplayNameLong": "Sovrin Stagingnet/Testnet/Sandbox",
       "DisplayDescription": "There was a rename and its still unclear, if this is called Staging, Testnet or Sandbox",
       "ElasticSearchIndex": "txs_sovstaging",
-      "Add": true,
+      "Add": false,
       "SeralizationSpeedSlowMediumFast": "MEDIUM",
       "ExpansionSpeedSlowMediumFast":"MEDIUM"
     },
@@ -43,6 +43,30 @@
       "DisplayNameLong": "Sovrin BuilderNet",
       "DisplayDescription": "For active development of your solution.",
       "ElasticSearchIndex": "txs_sovbuilder",
+      "Add": false,
+      "SeralizationSpeedSlowMediumFast": "MEDIUM",
+      "ExpansionSpeedSlowMediumFast":"MEDIUM"
+    },
+    {
+      "NameAndFixedId": "IDUNION_MAINNET",
+      "AliasIds": [
+      ],
+      "DisplayNameShort": "IDMain",
+      "DisplayNameLong": "IDunion Mainnet",
+      "DisplayDescription": "The IDunion network for production use cases",
+      "ElasticSearchIndex": "txs_idunionmain",
+      "Add": true,
+      "SeralizationSpeedSlowMediumFast": "MEDIUM",
+      "ExpansionSpeedSlowMediumFast":"MEDIUM"
+    },
+    {
+      "NameAndFixedId": "IDUNION_TESTNET",
+      "AliasIds": [
+      ],
+      "DisplayNameShort": "IDTest",
+      "DisplayNameLong": "IDunion Testnet",
+      "DisplayDescription": "The IDunion network for testing use cases",
+      "ElasticSearchIndex": "txs_iduniontest",
       "Add": true,
       "SeralizationSpeedSlowMediumFast": "MEDIUM",
       "ExpansionSpeedSlowMediumFast":"MEDIUM"
