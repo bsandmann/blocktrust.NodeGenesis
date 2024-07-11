@@ -79,7 +79,7 @@
       "DisplayNameLong": "Indicio Mainnet",
       "DisplayDescription": "The Indicio network for production use cases",
       "ElasticSearchIndex": "txs_indiciomain",
-      "Add": true,
+      "Add": false,
       "SeralizationSpeedSlowMediumFast": "MEDIUM",
       "ExpansionSpeedSlowMediumFast":"MEDIUM"
     },
@@ -91,6 +91,18 @@
       "DisplayNameLong": "Indicio Demonet",
       "DisplayDescription": "The Indicio network for testing use",
       "ElasticSearchIndex": "txs_indiciodemo",
+      "Add": false,
+      "SeralizationSpeedSlowMediumFast": "MEDIUM",
+      "ExpansionSpeedSlowMediumFast":"MEDIUM"
+    },
+    {
+      "NameAndFixedId": "INDICIO_TESTNET2024",
+      "AliasIds": [
+      ],
+      "DisplayNameShort": "InT24",
+      "DisplayNameLong": "Indicio Testnet 2024",
+      "DisplayDescription": "The Indicio network for testing use",
+      "ElasticSearchIndex": "txs_indiciotest24",
       "Add": true,
       "SeralizationSpeedSlowMediumFast": "MEDIUM",
       "ExpansionSpeedSlowMediumFast":"MEDIUM"
