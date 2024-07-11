@@ -42,7 +42,7 @@ services:
       - AUTOSTART=true
       - ENABLE_LOGFILES=false
     volumes:
-      - ./app-configs-daemon/:__IndyscanBasePath__/indyscan-daemon/app-configs
+      - ./app-configs-daemon/:/home/indyscan/indyscan-daemon/app-configs-docker
 
   indyscan-api:
     restart: unless-stopped
@@ -50,7 +50,7 @@ services:
     container_name: indyscan-api
     logging: *service-logging
     environment:
-      - NETWORKS_CONFIG_PATH=${INDYSCAN_API_CONFIG_PATH:-__IndyscanBasePath__/indyscan-api/app-config-docker/allNetworks.json}
+      - NETWORKS_CONFIG_PATH=${INDYSCAN_API_CONFIG_PATH:-/home/indyscan/indyscan-api/app-config-docker/allNetworks.json}
       - ES_URL=http://indyscan-elasticsearch.esnet:9200
       - AUTOSTART=true
       - LOG_LEVEL=debug
@@ -63,7 +63,7 @@ services:
     ports:
       - 3708:3708
     volumes:
-      - ./app-config-api/:__IndyscanBasePath__/indyscan-api/app-config-docker
+      - ./app-config-api/:/home/indyscan/indyscan-api/app-config-docker
 
   indyscan-webapp:
     restart: unless-stopped
