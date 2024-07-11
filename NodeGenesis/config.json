@@ -30,7 +30,7 @@
       "DisplayNameLong": "Sovrin Stagingnet/Testnet/Sandbox",
       "DisplayDescription": "There was a rename and its still unclear, if this is called Staging, Testnet or Sandbox",
       "ElasticSearchIndex": "txs_sovstaging",
-      "Add": false,
+      "Add": true,
       "SeralizationSpeedSlowMediumFast": "MEDIUM",
       "ExpansionSpeedSlowMediumFast":"MEDIUM"
     },
@@ -43,7 +43,7 @@
       "DisplayNameLong": "Sovrin BuilderNet",
       "DisplayDescription": "For active development of your solution.",
       "ElasticSearchIndex": "txs_sovbuilder",
-      "Add": false,
+      "Add": true,
       "SeralizationSpeedSlowMediumFast": "MEDIUM",
       "ExpansionSpeedSlowMediumFast":"MEDIUM"
     }
