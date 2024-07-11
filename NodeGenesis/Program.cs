@@ -142,7 +142,7 @@ class Program
             outputContent = outputContent.Replace("__IndyscanDaemonUiImage__", config.IndyscanDaemonUiImage);
 
             var workerPaths = config.Networks.Where(p => p.Add)
-                                             .Select(network =>$"/home/indyscan/indyscan-daemon/{network.NameAndFixedId}.json");
+                                             .Select(network =>$"/home/indyscan/indyscan-daemon/app-configs-docker/{network.NameAndFixedId}.json");
             var workerPathString = string.Join(",", workerPaths);
             outputContent = outputContent.Replace("__WorkerConfigs__", workerPathString);
 
