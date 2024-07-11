@@ -49,6 +49,9 @@ class Program
             // Copy Genesis files
             CopyGenesisFiles(Config);
 
+            
+            Console.WriteLine("If all operations were successful indysync should now be ablw to run:");
+            Console.WriteLine("sudo docker compose -f docker-compose.es.yml -f docker-compose.yml up -d --build");
         }
         catch (Exception ex)
         {
