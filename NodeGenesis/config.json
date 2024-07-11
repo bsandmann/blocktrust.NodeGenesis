@@ -103,6 +103,30 @@
       "DisplayNameLong": "Indicio Testnet 2024",
       "DisplayDescription": "The Indicio network for testing use",
       "ElasticSearchIndex": "txs_indiciotest24",
+      "Add": false,
+      "SeralizationSpeedSlowMediumFast": "MEDIUM",
+      "ExpansionSpeedSlowMediumFast":"MEDIUM"
+    },
+    {
+      "NameAndFixedId": "BCGOV_MAINNET",
+      "AliasIds": [
+      ],
+      "DisplayNameShort": "BCM",
+      "DisplayNameLong": "BCGov Mainnet",
+      "DisplayDescription": "The BCGov network for production use cases",
+      "ElasticSearchIndex": "txs_bcgovmain",
+      "Add": true,
+      "SeralizationSpeedSlowMediumFast": "MEDIUM",
+      "ExpansionSpeedSlowMediumFast":"MEDIUM"
+    },
+    {
+      "NameAndFixedId": "BCGOV_TESTNET",
+      "AliasIds": [
+      ],
+      "DisplayNameShort": "BCT",
+      "DisplayNameLong": "BCGov Testnet",
+      "DisplayDescription": "The BCGov network for testing use cases",
+      "ElasticSearchIndex": "txs_bcgovtest",
       "Add": true,
       "SeralizationSpeedSlowMediumFast": "MEDIUM",
       "ExpansionSpeedSlowMediumFast":"MEDIUM"
