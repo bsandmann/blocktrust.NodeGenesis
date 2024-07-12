@@ -27,7 +27,7 @@
         "SOVRIN_TESTNET"
       ],
       "DisplayNameShort": "SovT",
-      "DisplayNameLong": "Sovrin Stagingnet/Testnet/Sandbox",
+      "DisplayNameLong": "Sovrin Test (Staging)",
       "DisplayDescription": "There was a rename and its still unclear, if this is called Staging, Testnet or Sandbox",
       "ElasticSearchIndex": "txs_sovstaging",
       "Add": false,
@@ -40,7 +40,7 @@
         "sovbuilder"
       ],
       "DisplayNameShort": "SovB",
-      "DisplayNameLong": "Sovrin BuilderNet",
+      "DisplayNameLong": "Sovrin Builder",
       "DisplayDescription": "For active development of your solution.",
       "ElasticSearchIndex": "txs_sovbuilder",
       "Add": false,
@@ -127,7 +127,55 @@
       "DisplayNameLong": "BCGov Testnet",
       "DisplayDescription": "The BCGov network for testing use cases",
       "ElasticSearchIndex": "txs_bcgovtest",
-      "Add": true,
+      "Add": false,
+      "SeralizationSpeedSlowMediumFast": "MEDIUM",
+      "ExpansionSpeedSlowMediumFast":"MEDIUM"
+    },
+    {
+      "NameAndFixedId": "BCGOV_DEVNET",
+      "AliasIds": [
+      ],
+      "DisplayNameShort": "BCD",
+      "DisplayNameLong": "BCGov Devnet",
+      "DisplayDescription": "The BCGov network for testing use cases(2)",
+      "ElasticSearchIndex": "txs_bcgovdev",
+      "Add": false,
+      "SeralizationSpeedSlowMediumFast": "MEDIUM",
+      "ExpansionSpeedSlowMediumFast":"MEDIUM"
+    },
+    {
+      "NameAndFixedId": "CANDY_MAINNET",
+      "AliasIds": [
+      ],
+      "DisplayNameShort": "CAM",
+      "DisplayNameLong": "Pan-Canadian Trustnetwork Mainnet",
+      "DisplayDescription": "Production network for collaboration between Québec, Ontario and British-Columbia.",
+      "ElasticSearchIndex": "txs_candymain",
+      "Add": false,
+      "SeralizationSpeedSlowMediumFast": "MEDIUM",
+      "ExpansionSpeedSlowMediumFast":"MEDIUM"
+    },
+    {
+      "NameAndFixedId": "CANDY_TESTNET",
+      "AliasIds": [
+      ],
+      "DisplayNameShort": "CAT",
+      "DisplayNameLong": "Pan-Canadian Trustnetwork Testnet",
+      "DisplayDescription": "Test network for collaboration between Québec, Ontario and British-Columbia.",
+      "ElasticSearchIndex": "txs_candytest",
+      "Add": false,
+      "SeralizationSpeedSlowMediumFast": "MEDIUM",
+      "ExpansionSpeedSlowMediumFast":"MEDIUM"
+    },
+    {
+      "NameAndFixedId": "CANDY_DEVNET",
+      "AliasIds": [
+      ],
+      "DisplayNameShort": "CAD",
+      "DisplayNameLong": "Pan-Canadian Trustnetwork Devnet",
+      "DisplayDescription": "Development network for collaboration between Québec, Ontario and British-Columbia.",
+      "ElasticSearchIndex": "txs_candydev",
+      "Add": false,
       "SeralizationSpeedSlowMediumFast": "MEDIUM",
       "ExpansionSpeedSlowMediumFast":"MEDIUM"
     }
