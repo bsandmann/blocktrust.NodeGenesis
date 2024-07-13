@@ -108,18 +108,6 @@
       "ExpansionSpeedSlowMediumFast":"FAST"
     },
     {
-      "NameAndFixedId": "BCGOV_MAINNET",
-      "AliasIds": [
-      ],
-      "DisplayNameShort": "BCM",
-      "DisplayNameLong": "BCGov Mainnet",
-      "DisplayDescription": "The BCGov network for production use cases",
-      "ElasticSearchIndex": "txs_bcgovmain",
-      "Add": false,
-      "SeralizationSpeedSlowMediumFast": "FAST",
-      "ExpansionSpeedSlowMediumFast":"FAST"
-    },
-    {
       "NameAndFixedId": "BCGOV_TESTNET",
       "AliasIds": [
       ],
@@ -127,18 +115,6 @@
       "DisplayNameLong": "BCGov Testnet",
       "DisplayDescription": "The BCGov network for testing use cases",
       "ElasticSearchIndex": "txs_bcgovtest",
-      "Add": false,
-      "SeralizationSpeedSlowMediumFast": "FAST",
-      "ExpansionSpeedSlowMediumFast":"FAST"
-    },
-    {
-      "NameAndFixedId": "BCGOV_DEVNET",
-      "AliasIds": [
-      ],
-      "DisplayNameShort": "BCD",
-      "DisplayNameLong": "BCGov Devnet",
-      "DisplayDescription": "The BCGov network for testing use cases(2)",
-      "ElasticSearchIndex": "txs_bcgovdev",
       "Add": false,
       "SeralizationSpeedSlowMediumFast": "FAST",
       "ExpansionSpeedSlowMediumFast":"FAST"
