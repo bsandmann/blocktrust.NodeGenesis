@@ -26,6 +26,7 @@ services:
     image: ${INDYSCAN_ELASTICSEARCH_IMAGE:-__ElasticSearchImage__}
     container_name: indyscan-elasticsearch
     logging: *es-logging
+    restart: on-failure
     networks:
       - esnet
     environment:
